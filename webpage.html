@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>~How Delhi Breathes~</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=VT323&display=swap');
+        body,
+        html {
+            height: 100%;
+            font-family: "Courier Prime", monospace;
+        }
+        
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("images/Delhi_Pol1.webp");
+            min-height: 75%;
+        }
+        
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-green">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-green">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#results" class="w3-button w3-block w3-green">RESULTS</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-green">VISUALIZATIONS</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#resources" class="w3-button w3-block w3-green">RESOURCES</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag"></span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">HOW<br>DELHI<br>BREATHES</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">India Gate, Delhi</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="results">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">RESULTS</span></h5>
+                <article class="Para ">The project was done to help provide temporary relief to the residents of Delhi from the pollution in the city. Here is what I have learnt:
+
+                    <br><br>For people with respiratory issues, the best time to go outside is around 4pm. Here the temperature is also at an all time high, so better to avoid if possible.
+
+                    <br><br>Overall, 5-6pm is best as the average temperature goes down significantly, and air quality is still relatively good.
+
+                    <br><br>Avoid going out between 9-10am and pm as they have the most significant air pollution and could trigger coughing or worse.
+                    <br><br>For a more detailed explanation, watch the video I've made:
+                </article><iframe width="560" height="315" src="https://www.youtube.com/embed/qQLzt4iT1jQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE VIZZES</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Annual</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Daily</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <div class='tableauPlaceholder' id='viz1684179847963' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DelhiAirQualityIndex_16816441428710&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='DelhiAirQualityIndex_16816441428710&#47;Dashboard1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DelhiAirQualityIndex_16816441428710&#47;Dashboard1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-US' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1684179847963');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.width = '1000px';
+                            vizElement.style.height = '827px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.width = '1000px';
+                            vizElement.style.height = '827px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.height = '1427px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <img src="/images/Visualization1.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+                </div>
+                <img src="/images/Delhi_Pol2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+            </div>
+        </div>
+        <div class="w3-sand w3-grayscale w3-large">
+
+            <!-- About Container -->
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE PROJECT</span></h5>
+                    <article class="Para ">Delhi has been ranked as one of the most polluted cities in the world for several years, and air pollution has become a major health concern for the residents. The high levels of pollution in the city are caused by a combination of
+                        factors, including vehicular emissions, industrial activities, and dust and smoke from construction sites. The situation is exacerbated by geographical factors such as the city's location in a bowl-shaped valley, which can trap
+                        pollutants and make the air quality worse.
+
+                        <br><br>The poor air quality has a significant impact on public health. Exposure to high levels of air pollution can lead to respiratory diseases, heart disease, and other health issues. The World Health Organization estimates
+                        that air pollution contributes to around 7 million premature deaths globally each year. Therefore, it is essential to understand the levels and sources of air pollution in Delhi to develop effective strategies to mitigate its impacts
+                        on public health.
+
+                        <br><br>The air pollution has economic implications as well. It can have a negative impact on tourism, with visitors choosing to avoid areas with high levels of pollution. Additionally, air pollution can lead to increased healthcare
+                        costs and reduced productivity due to sickness and absenteeism.
+
+                        <br><br>Finally, an analytical project on air quality in Delhi can help raise awareness of the issue and encourage policymakers to take action to improve air quality. It can provide data-driven insights on the sources of pollution
+                        and the effectiveness of different interventions, leading to evidence-based policy decisions. Ultimately, this could help reduce the levels of pollution in Delhi and improve the health and wellbeing of its residents.
+
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Contact/Area Container -->
+            <div class="w3-container" id="resources" style="padding-bottom:32px;">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RESOURCES</span></h5>
+                    <p>This project could not have been completed without:</p>
+
+                    <p><span class="w3-tag">Tableau</span> For the visualization capabilities.</p>
+                    <p><span class="w3-tag"><a href="https://mausam.imd.gov.in/" title="18CSE301J" target="_blank" class="w3-hover-text-green"></a>Indian Meteorological Department</a></span> For providing the highly exhaustive pollution data.</p>
+                    <p><span class="w3-tag">Kaggle</span> For providing temperature data of Delhi</p>
+
+
+                </div>
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+            <p>Made by <a href="https://github.com/shubhamgusain2112/" title="Shubham Gusain" target="_blank" class="w3-hover-text-green">Shubham Gusain</a></p>
+            <p>For <a href="https://www.youtube.com/@18CSE301JSRMIST/videos" title="18CSE301J" target="_blank" class="w3-hover-text-green">18CSE301J</a></p>
+        </footer>
+
+        <script>
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+        </script>
+
+</body>
+
+</html>
